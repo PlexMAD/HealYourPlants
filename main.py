@@ -70,10 +70,10 @@ async def end_choice_reply(message: types.Message):
             bolezni = []
             max_symptoms = schet[i]
             bolezni.append(i)
-            print(bolezni,"типо победители")
+
         elif schet[i] == max_symptoms:
             bolezni.append(i)
-            print(bolezni,"типо победители")
+
     print(schet)
     for m in range(len(bolezni)):
         final_bolezni.append(list(illneses.keys())[bolezni[m]])
